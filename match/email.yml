@@ -1,0 +1,6 @@
+matches:
+  - triggers: [";jtv@" ,";@"]
+    replace: jtv@jrtv.dk
+    
+  - triggers: [";johnny@" ,";@"]
+    replace: johnny@jrtv.dk

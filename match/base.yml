@@ -8,11 +8,6 @@
 # Matches are substitution rules: when you type the "trigger" string
 # it gets replaced by the "replace" string.
 matches:
-  - triggers: [";jtv@" ,";@"]
-    replace: jtv@jrtv.dk
-  - triggers: [";johnny@" ,";@"]
-    replace: johnny@jrtv.dk
-  
   # Timestamp
   - triggers: [";ts", ";now"]
     replace: "{{myts}}"
