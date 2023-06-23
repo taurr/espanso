@@ -2,3 +2,8 @@
 matches:
   - trigger: ;bold
     replace: "**$|$**"
+
+  # todo/task
+  - trigger: ;t
+    word: true
+    replace: "- [ ] #task $|$"
