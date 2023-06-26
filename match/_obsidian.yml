@@ -1,9 +1,9 @@
 
 matches:
-  - trigger: ;bold
-    replace: "**$|$**"
-
   # todo/task
-  - trigger: ;t
+  - triggers: ["-[]"]
     word: true
     replace: "- [ ] #task $|$"
+
+  - triggers: ["\\ct"]
+    replace: "/createtask"

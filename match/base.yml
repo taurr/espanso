@@ -1,31 +1,4 @@
 matches:
-  # Timestamp
-  - triggers: [";ts", ";now"]
-    replace: "{{myts}}"
-    vars:
-      - name: myts
-        type: date
-        params:
-          format: "%Y-%m-%d %H:%M:%S"
-
-  # Print the current date
-  - trigger: ";date"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%Y-%m-%d"
-
-  # Print the current time
-  - trigger: ";time"
-    replace: "{{mytime}}"
-    vars:
-      - name: mytime
-        type: date
-        params:
-          format: "%H:%M:%S"
-
   # GUID
   - triggers: [";guid", ";uuid"]
     replace: "{{output}}"

@@ -1,0 +1,47 @@
+matches:
+  # Timestamp
+  - triggers: ["@ts"]
+    replace: "{{myts}}"
+    vars:
+      - name: myts
+        type: date
+        params:
+          format: "%Y-%m-%d %H:%M:%S"
+
+  # Print the current date
+  - triggers: ["@date", "@td", "@today"]
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  # Print the date of yesterday
+  - triggers: ["@yesterday", "@yd"]
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+          offset: -86400
+
+  # Print the date of tomorrow
+  - triggers: ["@tomorrow", "@tm"]
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+          offset: 86400
+
+  # Print the current time
+  - triggers: ["@time", "@now"]
+    replace: "{{mytime}}"
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%H:%M:%S"
