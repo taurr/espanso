@@ -26,7 +26,7 @@ async fn main() -> Result<()> {
     let now = Local::now();
     let now = now.format("%Y/%m/%d %H:%M:%S");
 
-    println!("Query is: {}", &args);
+    //println!("Query is: {}", &args);
 
     dotenv().ok();
     set_key(env::var("OPENAI_KEY").context("OPENAI_KEY")?);
