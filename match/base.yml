@@ -1,6 +1,6 @@
 matches:
   # GUID
-  - triggers: [";guid", ";uuid"]
+  - triggers: ["\\guid\\", "\\uuid\\"]
     replace: "{{output}}"
     vars:
       - name: output
@@ -13,7 +13,7 @@ matches:
             - -Zscript
             - "%CONFIG%/scripts/guid.rs"
 
-  - regex: "@\\{(?P<q>.+)\\}"
+  - regex: "\\gpt (?P<q>.+)\\"
     replace: "{{output}}"
     vars:
       - name: output

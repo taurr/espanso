@@ -1,6 +1,9 @@
 matches:
-  - triggers: [";jtv@" ,";@"]
+  - triggers: ["jtv@" ,"e@"]
     replace: jtv@jrtv.dk
-    
-  - triggers: [";johnny@" ,";@"]
+
+  - triggers: ["johnny@" ,"e@"]
     replace: johnny@jrtv.dk
+
+  - triggers: ["e@"]
+    replace: vestergaard.johnny.ext@siemensgamesa.com
