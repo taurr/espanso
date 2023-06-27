@@ -13,16 +13,3 @@ matches:
             - -Zscript
             - "%CONFIG%/scripts/guid.rs"
 
-  - regex: "\\gpt (?P<q>.+)\\"
-    replace: "{{output}}"
-    vars:
-      - name: output
-        type: script
-        params:
-          args:
-            - cargo
-            - +nightly
-            - --quiet
-            - -Zscript
-            - "%CONFIG%/scripts/openai_date.rs"
-            - "{{q}}"

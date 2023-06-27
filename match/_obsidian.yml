@@ -19,7 +19,7 @@ matches:
           format: "%H:%M"
 
   # Log entry linking to the daily Siemens Gamesa
-  - triggers: ["\\sl\\"]
+  - triggers: ["\\sl\\", "\\slog\\"]
     replace: "### [[{{date}} - Siemens Gamesa|{{date}}]] {{time}}:\n"
     vars:
       - name: date

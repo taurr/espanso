@@ -1,4 +1,18 @@
 matches:
+  - regex: "@\\((?P<q>.*)\\)"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - cargo
+            - +nightly
+            - --quiet
+            - -Zscript
+            - "%CONFIG%/scripts/openai_date.rs"
+            - "{{q}}"
+
   # Timestamp
   - triggers: ["@ts"]
     replace: "{{myts}}"
