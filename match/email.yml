@@ -5,5 +5,14 @@ matches:
   - triggers: ["johnny@" ,"e@"]
     replace: johnny@jrtv.dk
 
+  - triggers: ["randi@" ,"e@"]
+    replace: randi@jrtv.dk
+
+  - triggers: ["cristoffer@" ,"e@"]
+    replace: cristoffer@jrtv.dk
+
+  - triggers: ["cristine@" ,"e@"]
+    replace: cristine@jrtv.dk
+
   - triggers: ["e@"]
     replace: vestergaard.johnny.ext@siemensgamesa.com
