@@ -1,5 +1,9 @@
 
 matches:
+  # insert codeblock
+  - regex: "''(?P<mode>.+)''"
+    replace: "```{{mode}}\n$|$\n```\n"
+
   # todo/task
   - triggers: ["-[]"]
     word: true

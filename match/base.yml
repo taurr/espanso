@@ -1,6 +1,6 @@
 matches:
   # GUID
-  - triggers: ["\\guid\\", "\\uuid\\"]
+  - triggers: ["%guid%", "%uuid%"]
     replace: "{{output}}"
     vars:
       - name: output
