@@ -13,3 +13,7 @@ matches:
             - -Zscript
             - "%CONFIG%/scripts/guid.rs"
 
+  - trigger: <br>
+    replace: <br/>
+    propagate_case: true
+    word: false
