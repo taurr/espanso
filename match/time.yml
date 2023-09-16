@@ -14,7 +14,7 @@ matches:
             - "{{q}}"
 
   # Timestamp
-  - triggers: ["@ts", "@timestamp"]
+  - triggers: ["@dt", "@datetime"]
     word: true
     replace: "{{myts}}"
     vars:
@@ -24,7 +24,7 @@ matches:
           format: "%Y-%m-%d %H:%M:%S"
 
   # Print the current date
-  - triggers: ["@d", "@td", "@date"]
+  - triggers: ["@d", "@date"]
     word: true
     replace: "{{mydate}}"
     vars:

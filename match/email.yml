@@ -1,18 +1,25 @@
 matches:
-  - triggers: ["jtv@" ,"e@"]
+  - triggers: ["jtv@", "j@", "e@"]
+    word: true
     replace: jtv@jrtv.dk
 
-  - triggers: ["johnny@" ,"e@"]
+  - triggers: ["johnny@", "j@", "e@"]
+    word: true
     replace: johnny@jrtv.dk
 
-  - triggers: ["randi@" ,"e@"]
+  - triggers: ["randi@", "r@", "e@"]
+    word: true
     replace: randi@jrtv.dk
 
-  - triggers: ["cristoffer@" ,"e@"]
+  - triggers: ["cristoffer@", "c@", "e@"]
+    word: true
     replace: cristoffer@jrtv.dk
 
-  - triggers: ["cristine@" ,"e@"]
+  - triggers: ["cristine@", "c@", "e@"]
+    word: true
     replace: cristine@jrtv.dk
 
-  - triggers: ["e@"]
+  - triggers: ["j@", "e@"]
+    word: true
     replace: vestergaard.johnny.ext@siemensgamesa.com
+

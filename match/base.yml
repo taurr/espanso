@@ -1,6 +1,7 @@
 matches:
   # GUID
-  - triggers: ["%guid%", "%uuid%"]
+  - triggers: [":guid", ":uuid"]
+    word: true
     replace: "{{output}}"
     vars:
       - name: output
@@ -13,7 +14,12 @@ matches:
             - -Zscript
             - "%CONFIG%/scripts/guid.rs"
 
+  # <br/>
   - trigger: <br>
+    word: true
     replace: <br/>
     propagate_case: true
-    word: false
+
+  # _=
+  - trigger: "_= "
+    replace: " = "

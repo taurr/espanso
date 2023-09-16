@@ -9,20 +9,10 @@ matches:
     word: true
     replace: "- [ ] #task $|$"
 
-  # Time header
-  - triggers: ["%th%"]
-    replace: "##### {{time}}\n"
-    #word: true
-    vars:
-      - name: time
-        type: date
-        params:
-          format: "%H:%M:%S"
-
   # Log entry linking to daily
-  - triggers: ["%log%"]
-    replace: "### [[{{date}}]] {{time}}\n"
-    #word: true
+  - triggers: [":log"]
+    replace: "[[{{date}}]] {{time}}"
+    word: true
     vars:
       - name: date
         type: date
@@ -34,9 +24,9 @@ matches:
           format: "%H:%M"
 
   # Log entry linking to the daily Siemens Gamesa
-  - triggers: ["%sl%", "%slog%"]
-    replace: "### [[{{date}} - Siemens Gamesa|{{date}}]] {{time}}\n"
-    #word: true
+  - triggers: [":slog"]
+    replace: "[[{{date}} - Siemens Gamesa|{{date}}]] {{time}}"
+    word: true
     vars:
       - name: date
         type: date

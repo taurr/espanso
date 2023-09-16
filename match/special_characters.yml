@@ -1,13 +1,13 @@
 matches:
-  - triggers: [":...:"]
+  - triggers: [":..."]
     replace: …
 
-  - triggers: ['::-):', ':):']
+  - triggers: ['::-)', '::)']
     replace: 😄
 
-  - triggers: ['::-(:', ':(:']
+  - triggers: ['::-(', '::(']
     replace: ☹️
 
-  - triggers: ['::-D:', ':D:']
+  - triggers: ['::-D', '::D']
     replace: 😆
 
