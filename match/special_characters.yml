@@ -11,3 +11,14 @@ matches:
   - triggers: ['::-D', '::D']
     replace: 😆
 
+  - triggers: [':<<']
+    replace: «
+
+  - triggers: [':>>']
+    replace: »
+
+  - triggers: [':||', ':lightning']
+    replace: 🗲
+
+  - triggers: ['://', ':zigzag']
+    replace: ↯
