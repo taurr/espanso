@@ -7,6 +7,14 @@ matches:
   # todo/task
   - triggers: ["-[]"]
     word: true
+    replace: "- [ ] $|$"
+
+  - triggers: ["#t"]
+    word: true
+    replace: "#task"
+
+  - triggers: ["-[]t"]
+    word: true
     replace: "- [ ] #task $|$"
 
   # Log entry linking to daily

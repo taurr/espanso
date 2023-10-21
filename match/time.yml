@@ -24,7 +24,7 @@ matches:
           format: "%Y-%m-%d %H:%M:%S"
 
   # Print the current date
-  - triggers: ["@d", "@date"]
+  - triggers: ["@d", "@date", "@td", "@today"]
     word: true
     replace: "{{mydate}}"
     vars:
