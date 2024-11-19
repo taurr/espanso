@@ -1,24 +1,27 @@
 matches:
-  - triggers: [":..."]
+  - triggers: [":...:"]
     replace: …
 
-  - triggers: ['::-)', '::)']
+  - triggers: ['::-):', '::):']
     replace: 😄
 
-  - triggers: ['::-(', '::(']
+  - triggers: ['::-(:', '::(:']
     replace: ☹️
 
-  - triggers: ['::-D', '::D']
+  - triggers: ['::-D:', '::D:']
     replace: 😆
 
-  - triggers: [':<<']
+  - triggers: [':<<:']
     replace: «
 
-  - triggers: [':>>']
+  - triggers: [':>>:']
     replace: »
 
-  - triggers: [':||', ':lightning']
+  - triggers: [':||:', ':lightning:']
     replace: 🗲
 
-  - triggers: ['://', ':zigzag']
+  - triggers: ['://:', ':zigzag:']
     replace: ↯
+
+  - triggers: [':bulb:', ':idea:']
+    replace: 💡

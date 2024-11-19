@@ -1,22 +1,21 @@
 matches:
   # GUID
-  - triggers: [":guid", ":uuid"]
-    word: true
-    replace: "{{output}}"
-    vars:
-      - name: output
-        type: script
-        params:
-          args:
-            - cargo
-            - +nightly
-            - --quiet
-            - -Zscript
-            - "%CONFIG%/scripts/guid.rs"
+  #- triggers: [":guid", ":uuid"]
+  #  word: true
+  #  replace: "{{output}}"
+  #  vars:
+  #    - name: output
+  #      type: script
+  #      params:
+  #        args:
+  #          - cargo
+  #          - +nightly
+  #          - --quiet
+  #          - -Zscript
+  #          - "%CONFIG%/scripts/guid.rs"
 
   # <br/>
   - trigger: <br>
-    word: true
     replace: <br/>
     propagate_case: true
 

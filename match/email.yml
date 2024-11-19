@@ -4,7 +4,6 @@ matches:
     replace: jtv@jrtv.dk
 
   - triggers: ["johnny@", "j@", "e@"]
-    word: true
     replace: johnny@jrtv.dk
 
   - triggers: ["randi@", "r@", "e@"]
@@ -19,7 +18,7 @@ matches:
     word: true
     replace: cristine@jrtv.dk
 
-  - triggers: ["j@", "e@"]
+  - triggers: ["js@", "j@", "e@"]
     word: true
     replace: vestergaard.johnny.ext@siemensgamesa.com
 

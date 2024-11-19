@@ -14,8 +14,8 @@ matches:
             - "{{q}}"
 
   # Timestamp
-  - triggers: ["@dt", "@datetime"]
-    word: true
+  - triggers: ["@dt@", "@datetime@"]
+    #word: true
     replace: "{{myts}}"
     vars:
       - name: myts
@@ -24,8 +24,8 @@ matches:
           format: "%Y-%m-%d %H:%M:%S"
 
   # Print the current date
-  - triggers: ["@d", "@date", "@td", "@today"]
-    word: true
+  - triggers: ["@d@", "@date@", "@td@", "@today@"]
+    #word: true
     replace: "{{mydate}}"
     vars:
       - name: mydate
@@ -34,8 +34,8 @@ matches:
           format: "%Y-%m-%d"
 
   # Print the date of yesterday
-  - triggers: ["@yd", "@yesterday"]
-    word: true
+  - triggers: ["@yd@", "@yesterday@"]
+    #word: true
     replace: "{{mydate}}"
     vars:
       - name: mydate
@@ -45,8 +45,8 @@ matches:
           offset: -86400
 
   # Print the date of tomorrow
-  - triggers: ["@tm", "@tomorrow"]
-    word: true
+  - triggers: ["@tm@", "@tomorrow@"]
+    #word: true
     replace: "{{mydate}}"
     vars:
       - name: mydate
@@ -56,8 +56,8 @@ matches:
           offset: 86400
 
   # Print the current time
-  - triggers: ["@t", "@time", "@now"]
-    word: true
+  - triggers: ["@t@", "@time@", "@now@"]
+    #word: true
     replace: "{{mytime}}"
     vars:
       - name: mytime
